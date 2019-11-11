@@ -112,26 +112,30 @@
             // gray
             // 
             this.gray.Name = "gray";
-            this.gray.Size = new System.Drawing.Size(129, 22);
+            this.gray.Size = new System.Drawing.Size(152, 22);
             this.gray.Text = "GrayScale";
+            this.gray.Click += new System.EventHandler(this.gray_Click);
             // 
             // bright
             // 
             this.bright.Name = "bright";
-            this.bright.Size = new System.Drawing.Size(129, 22);
+            this.bright.Size = new System.Drawing.Size(152, 22);
             this.bright.Text = "Brightness";
+            this.bright.Click += new System.EventHandler(this.bright_Click);
             // 
             // invert
             // 
             this.invert.Name = "invert";
-            this.invert.Size = new System.Drawing.Size(129, 22);
+            this.invert.Size = new System.Drawing.Size(152, 22);
             this.invert.Text = "Invert";
+            this.invert.Click += new System.EventHandler(this.invert_Click);
             // 
             // color
             // 
             this.color.Name = "color";
-            this.color.Size = new System.Drawing.Size(129, 22);
+            this.color.Size = new System.Drawing.Size(152, 22);
             this.color.Text = "Color";
+            this.color.Click += new System.EventHandler(this.color_Click);
             // 
             // edit
             // 
@@ -144,8 +148,9 @@
             // undo
             // 
             this.undo.Name = "undo";
-            this.undo.Size = new System.Drawing.Size(103, 22);
+            this.undo.Size = new System.Drawing.Size(152, 22);
             this.undo.Text = "Undo";
+            this.undo.Click += new System.EventHandler(this.undo_Click);
             // 
             // zoom
             // 
@@ -163,38 +168,44 @@
             // zoom25
             // 
             this.zoom25.Name = "zoom25";
-            this.zoom25.Size = new System.Drawing.Size(102, 22);
+            this.zoom25.Size = new System.Drawing.Size(152, 22);
             this.zoom25.Text = "25%";
+            this.zoom25.Click += new System.EventHandler(this.zoom25_Click);
             // 
             // zoom50
             // 
             this.zoom50.Name = "zoom50";
-            this.zoom50.Size = new System.Drawing.Size(102, 22);
+            this.zoom50.Size = new System.Drawing.Size(152, 22);
             this.zoom50.Text = "50%";
+            this.zoom50.Click += new System.EventHandler(this.zoom50_Click);
             // 
             // zoom100
             // 
             this.zoom100.Name = "zoom100";
-            this.zoom100.Size = new System.Drawing.Size(102, 22);
+            this.zoom100.Size = new System.Drawing.Size(152, 22);
             this.zoom100.Text = "100%";
+            this.zoom100.Click += new System.EventHandler(this.zoom100_Click);
             // 
             // zoom150
             // 
             this.zoom150.Name = "zoom150";
-            this.zoom150.Size = new System.Drawing.Size(102, 22);
+            this.zoom150.Size = new System.Drawing.Size(152, 22);
             this.zoom150.Text = "150%";
+            this.zoom150.Click += new System.EventHandler(this.zoom150_Click);
             // 
             // zoom200
             // 
             this.zoom200.Name = "zoom200";
-            this.zoom200.Size = new System.Drawing.Size(102, 22);
+            this.zoom200.Size = new System.Drawing.Size(152, 22);
             this.zoom200.Text = "200%";
+            this.zoom200.Click += new System.EventHandler(this.zoom200_Click);
             // 
             // zoom300
             // 
             this.zoom300.Name = "zoom300";
-            this.zoom300.Size = new System.Drawing.Size(102, 22);
+            this.zoom300.Size = new System.Drawing.Size(152, 22);
             this.zoom300.Text = "300%";
+            this.zoom300.Click += new System.EventHandler(this.zoom300_Click);
             // 
             // contextMenuStrip1
             // 

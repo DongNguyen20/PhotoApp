@@ -20,6 +20,7 @@ namespace PhotoApp
             InitializeComponent();
             m_Bitmap = new Bitmap(2, 2);
         }
+
         //Hien thi anh
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -64,7 +65,95 @@ namespace PhotoApp
             this.Close();
         }
 
+        //Filter
+        private void gray_Click(object sender, EventArgs e)
+        {
+            m_Undo = (Bitmap)m_Bitmap.Clone();
+            if (BitmapFilter.GrayScale(m_Bitmap))
+                this.Invalidate();
+        }
 
+        private void bright_Click(object sender, EventArgs e)
+        {
+            Parameter dlg = new Parameter();
+            dlg.nValue = 0;
+            if (DialogResult.OK == dlg.ShowDialog())
+            {
+                m_Undo = (Bitmap)m_Bitmap.Clone();
+                if (BitmapFilter.Brightness(m_Bitmap, dlg.nValue))
+                    this.Invalidate();
+            }
+        }
 
+        //Zoom
+        private void zoom25_Click(object sender, EventArgs e)
+        {
+            Zoom = .25;
+            this.AutoScrollMinSize = new Size((int)(m_Bitmap.Width * Zoom), (int)(m_Bitmap.Height * Zoom));
+            this.Invalidate();
+        }
+
+        private void zoom50_Click(object sender, EventArgs e)
+        {
+            Zoom = .5;
+            this.AutoScrollMinSize = new Size((int)(m_Bitmap.Width * Zoom), (int)(m_Bitmap.Height * Zoom));
+            this.Invalidate();
+        }
+
+        private void zoom100_Click(object sender, EventArgs e)
+        {
+            Zoom = 1.0;
+            this.AutoScrollMinSize = new Size((int)(m_Bitmap.Width * Zoom), (int)(m_Bitmap.Height * Zoom));
+            this.Invalidate();
+        }
+
+        private void zoom150_Click(object sender, EventArgs e)
+        {
+            Zoom = 1.5;
+            this.AutoScrollMinSize = new Size((int)(m_Bitmap.Width * Zoom), (int)(m_Bitmap.Height * Zoom));
+            this.Invalidate();
+        }
+
+        private void zoom200_Click(object sender, EventArgs e)
+        {
+            Zoom = 2.0;
+            this.AutoScrollMinSize = new Size((int)(m_Bitmap.Width * Zoom), (int)(m_Bitmap.Height * Zoom));
+            this.Invalidate();
+        }
+
+        private void zoom300_Click(object sender, EventArgs e)
+        {
+            Zoom = 3.0;
+            this.AutoScrollMinSize = new Size((int)(m_Bitmap.Width * Zoom), (int)(m_Bitmap.Height * Zoom));
+            this.Invalidate();
+        }
+
+        private void undo_Click(object sender, EventArgs e)
+        {
+            Bitmap temp = (Bitmap)m_Bitmap.Clone();
+            m_Bitmap = (Bitmap)m_Undo.Clone();
+            m_Undo = (Bitmap)temp.Clone();
+            this.Invalidate();
+        }
+
+        private void invert_Click(object sender, EventArgs e)
+        {
+            m_Undo = (Bitmap)m_Bitmap.Clone();
+            if (BitmapFilter.Invert(m_Bitmap))
+                this.Invalidate();
+        }
+
+        private void color_Click(object sender, EventArgs e)
+        {
+            RGB dlg = new RGB();
+            dlg.red = dlg.green = dlg.blue = 0;
+
+            if (DialogResult.OK == dlg.ShowDialog())
+            {
+                m_Undo = (Bitmap)m_Bitmap.Clone();
+                if (BitmapFilter.Color(m_Bitmap, dlg.red, dlg.green, dlg.blue))
+                    this.Invalidate();
+            }
+        }
     }
 }

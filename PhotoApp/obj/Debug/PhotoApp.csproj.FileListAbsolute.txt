@@ -7,3 +7,5 @@ c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug
 c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug\PhotoApp.csproj.GenerateResource.Cache
 c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug\PhotoApp.exe
 c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug\PhotoApp.pdb
+c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug\PhotoApp.Parameter.resources
+c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug\PhotoApp.RGB.resources
