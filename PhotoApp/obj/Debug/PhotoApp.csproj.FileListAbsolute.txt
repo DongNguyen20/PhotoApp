@@ -1,0 +1,9 @@
+c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\bin\Debug\PhotoApp.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\bin\Debug\PhotoApp.exe
+c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\bin\Debug\PhotoApp.pdb
+c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug\PhotoApp.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug\PhotoApp.Form1.resources
+c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug\PhotoApp.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug\PhotoApp.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug\PhotoApp.exe
+c:\users\admin\documents\visual studio 2015\Projects\PhotoApp\PhotoApp\obj\Debug\PhotoApp.pdb
