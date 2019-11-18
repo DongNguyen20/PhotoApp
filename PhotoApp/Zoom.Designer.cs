@@ -1,11 +1,25 @@
 ﻿namespace PhotoApp
 {
-    partial class Parameter
+    partial class Zoom
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-  
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -14,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Zoom));
             this.label1 = new System.Windows.Forms.Label();
-            this.Value = new System.Windows.Forms.TextBox();
+            this.sizeZoom = new System.Windows.Forms.TextBox();
             this.OK = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -23,53 +38,50 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(25, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Value";
             // 
-            // Value
+            // sizeZoom
             // 
-            this.Value.Location = new System.Drawing.Point(66, 12);
-            this.Value.Name = "Value";
-            this.Value.Size = new System.Drawing.Size(137, 20);
-            this.Value.TabIndex = 0;
+            this.sizeZoom.Location = new System.Drawing.Point(65, 12);
+            this.sizeZoom.Name = "sizeZoom";
+            this.sizeZoom.Size = new System.Drawing.Size(123, 20);
+            this.sizeZoom.TabIndex = 1;
             // 
             // OK
             // 
-            this.OK.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.OK.Location = new System.Drawing.Point(12, 50);
+            this.OK.Location = new System.Drawing.Point(28, 43);
             this.OK.Name = "OK";
-            this.OK.Size = new System.Drawing.Size(62, 31);
-            this.OK.TabIndex = 0;
+            this.OK.Size = new System.Drawing.Size(60, 23);
+            this.OK.TabIndex = 2;
             this.OK.Text = "OK";
             this.OK.UseVisualStyleBackColor = true;
             // 
             // Cancel
             // 
-            this.Cancel.Location = new System.Drawing.Point(141, 50);
+            this.Cancel.Location = new System.Drawing.Point(170, 43);
             this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(62, 31);
-            this.Cancel.TabIndex = 1;
+            this.Cancel.Size = new System.Drawing.Size(58, 23);
+            this.Cancel.TabIndex = 3;
             this.Cancel.Text = "Cancel";
             this.Cancel.UseVisualStyleBackColor = true;
             // 
-            // Parameter
+            // Zoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(221, 90);
+            this.ClientSize = new System.Drawing.Size(259, 78);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.OK);
-            this.Controls.Add(this.Value);
+            this.Controls.Add(this.sizeZoom);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "Parameter";
-            this.Text = "Parameter";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Zoom";
+            this.Text = "Zoom";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -78,7 +90,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Value;
+        private System.Windows.Forms.TextBox sizeZoom;
         private System.Windows.Forms.Button OK;
         private System.Windows.Forms.Button Cancel;
     }

@@ -15,10 +15,14 @@ namespace PhotoApp
         private System.Drawing.Bitmap m_Bitmap;
         private System.Drawing.Bitmap m_Undo;
         private double Zoom = 1.0;
+
+
         public Form1()
         {
             InitializeComponent();
             m_Bitmap = new Bitmap(2, 2);
+          
+           
         }
 
         //Hien thi anh
@@ -38,6 +42,7 @@ namespace PhotoApp
             if(openFile.ShowDialog() == DialogResult.OK)
             {
                 m_Bitmap = (Bitmap)Bitmap.FromFile(openFile.FileName, false);
+               
                 this.AutoScroll = true;
                 this.AutoScrollMinSize = new Size((int)(m_Bitmap.Width * Zoom), (int)(m_Bitmap.Height * Zoom));
                 this.Invalidate();
@@ -153,6 +158,19 @@ namespace PhotoApp
                 m_Undo = (Bitmap)m_Bitmap.Clone();
                 if (BitmapFilter.Color(m_Bitmap, dlg.red, dlg.green, dlg.blue))
                     this.Invalidate();
+            }
+        }
+
+        private void TuyChinh_Click(object sender, EventArgs e)
+        {
+            Zoom x = new Zoom();
+            x.sz = 0;
+            if(DialogResult.OK == x.ShowDialog())
+            {
+                Zoom = x.sz/100;
+                this.AutoScrollMinSize = new Size((int)(m_Bitmap.Width * Zoom), (int)(m_Bitmap.Height * Zoom));
+                this.Invalidate();
+
             }
         }
     }

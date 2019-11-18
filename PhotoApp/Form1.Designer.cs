@@ -49,6 +49,7 @@
             this.zoom150 = new System.Windows.Forms.ToolStripMenuItem();
             this.zoom200 = new System.Windows.Forms.ToolStripMenuItem();
             this.zoom300 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TuyChinh = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -79,22 +80,25 @@
             // 
             // LoadFile
             // 
+            this.LoadFile.Image = global::PhotoApp.Properties.Resources.up;
             this.LoadFile.Name = "LoadFile";
-            this.LoadFile.Size = new System.Drawing.Size(152, 22);
+            this.LoadFile.Size = new System.Drawing.Size(100, 22);
             this.LoadFile.Text = "Load";
             this.LoadFile.Click += new System.EventHandler(this.LoadFile_Click);
             // 
             // saveFile
             // 
+            this.saveFile.Image = global::PhotoApp.Properties.Resources.save;
             this.saveFile.Name = "saveFile";
-            this.saveFile.Size = new System.Drawing.Size(152, 22);
+            this.saveFile.Size = new System.Drawing.Size(100, 22);
             this.saveFile.Text = "Save";
             this.saveFile.Click += new System.EventHandler(this.saveFile_Click);
             // 
             // exit
             // 
+            this.exit.Image = global::PhotoApp.Properties.Resources.img_517388;
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(152, 22);
+            this.exit.Size = new System.Drawing.Size(100, 22);
             this.exit.Text = "Exit";
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
@@ -112,28 +116,29 @@
             // gray
             // 
             this.gray.Name = "gray";
-            this.gray.Size = new System.Drawing.Size(152, 22);
+            this.gray.Size = new System.Drawing.Size(129, 22);
             this.gray.Text = "GrayScale";
             this.gray.Click += new System.EventHandler(this.gray_Click);
             // 
             // bright
             // 
             this.bright.Name = "bright";
-            this.bright.Size = new System.Drawing.Size(152, 22);
+            this.bright.Size = new System.Drawing.Size(129, 22);
             this.bright.Text = "Brightness";
             this.bright.Click += new System.EventHandler(this.bright_Click);
             // 
             // invert
             // 
             this.invert.Name = "invert";
-            this.invert.Size = new System.Drawing.Size(152, 22);
+            this.invert.Size = new System.Drawing.Size(129, 22);
             this.invert.Text = "Invert";
             this.invert.Click += new System.EventHandler(this.invert_Click);
             // 
             // color
             // 
+            this.color.Image = global::PhotoApp.Properties.Resources.RGB_512;
             this.color.Name = "color";
-            this.color.Size = new System.Drawing.Size(152, 22);
+            this.color.Size = new System.Drawing.Size(129, 22);
             this.color.Text = "Color";
             this.color.Click += new System.EventHandler(this.color_Click);
             // 
@@ -147,8 +152,9 @@
             // 
             // undo
             // 
+            this.undo.Image = global::PhotoApp.Properties.Resources.undo;
             this.undo.Name = "undo";
-            this.undo.Size = new System.Drawing.Size(152, 22);
+            this.undo.Size = new System.Drawing.Size(103, 22);
             this.undo.Text = "Undo";
             this.undo.Click += new System.EventHandler(this.undo_Click);
             // 
@@ -160,7 +166,8 @@
             this.zoom100,
             this.zoom150,
             this.zoom200,
-            this.zoom300});
+            this.zoom300,
+            this.TuyChinh});
             this.zoom.Name = "zoom";
             this.zoom.Size = new System.Drawing.Size(51, 20);
             this.zoom.Text = "Zoom";
@@ -207,6 +214,14 @@
             this.zoom300.Text = "300%";
             this.zoom300.Click += new System.EventHandler(this.zoom300_Click);
             // 
+            // TuyChinh
+            // 
+            this.TuyChinh.Image = global::PhotoApp.Properties.Resources._26_512;
+            this.TuyChinh.Name = "TuyChinh";
+            this.TuyChinh.Size = new System.Drawing.Size(152, 22);
+            this.TuyChinh.Text = "TuyChinh";
+            this.TuyChinh.Click += new System.EventHandler(this.TuyChinh_Click);
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -217,7 +232,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(618, 364);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(618, 409);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Blue;
@@ -254,6 +270,7 @@
         private System.Windows.Forms.ToolStripMenuItem zoom200;
         private System.Windows.Forms.ToolStripMenuItem zoom300;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem TuyChinh;
     }
 }
 
